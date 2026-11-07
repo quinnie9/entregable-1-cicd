@@ -1,7 +1,7 @@
 import platform
 import datetime
 
-AUTOR = "Quinnie Villarreal"
+AUTOR = "Quinnie Villarreal, Diego Sanchez"
 
 
 def main():
