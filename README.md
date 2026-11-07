@@ -5,9 +5,9 @@ y la información del sistema operativo del runner mediante un script de Python.
 
 ## Integrantes
 
-**Nombre completo:** Quinnie Villarreal, Diego Sanchez
+**Nombre completo:** Quinnie Villarreal | Diego Sanchez
 
-**Usuario de GitHub y propietario del repositorio:** [quinnie9](https://github.com/quinnie9).
+**Usuario de GitHub y propietario del repositorio:** [quinnie9](https://github.com/quinnie9) [disanchezx.](https://github.com/disanchezx)
 
 ## Entregable
 
@@ -15,6 +15,8 @@ y la información del sistema operativo del runner mediante un script de Python.
 - [Script Python](mi_script.py): imprime el autor, el sistema operativo y la fecha y hora.
 
 ## Respuestas
+
+
 
 ### 1. ¿Qué eventos configuraste para disparar tu workflow y por qué?
 
@@ -32,11 +34,15 @@ En el paso del saludo configuramos explícitamente `shell: bash`. Bash interpret
 
 ### 3. Tres acciones preconstruidas no mencionadas en el material
 
-| Acción | ¿Qué hace y para qué sirve? |
-| --- | --- |
-| [actions/setup-node](https://github.com/actions/setup-node) | Configura una versión de Node.js y la deja disponible para los pasos posteriores. Sirve para ejecutar herramientas, construir aplicaciones y realizar pruebas de proyectos JavaScript. |
-| [actions/cache](https://github.com/actions/cache) | Guarda y restaura dependencias y otros archivos mediante claves de caché. Sirve para reducir descargas y acelerar ejecuciones posteriores. |
-| [docker/build-push-action](https://github.com/docker/build-push-action) | Construye imágenes de contenedores con Docker Buildx y permite publicarlas en un registro. Sirve para empaquetar una aplicación y distribuir una imagen reproducible de ella. |
+
+| Acción                                                                  | ¿Qué hace y para qué sirve?                                                                                                                                                            |
+| ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [actions/setup-node](https://github.com/actions/setup-node)             | Configura una versión de Node.js y la deja disponible para los pasos posteriores. Sirve para ejecutar herramientas, construir aplicaciones y realizar pruebas de proyectos JavaScript. |
+| [actions/cache](https://github.com/actions/cache)                       | Guarda y restaura dependencias y otros archivos mediante claves de caché. Sirve para reducir descargas y acelerar ejecuciones posteriores.                                             |
+| [docker/build-push-action](https://github.com/docker/build-push-action) | Construye imágenes de contenedores con Docker Buildx y permite publicarlas en un registro. Sirve para empaquetar una aplicación y distribuir una imagen reproducible de ella.          |
+
+
+
 
 ### 4. ¿Qué es un secreto y cómo lo usarías?
 
@@ -60,13 +66,12 @@ repositorio.
 Como propuesta para nuestro flujo de trabajo diario, automatizariamos estas dos tareas:
 
 - **Ejecutar pruebas al subir cambios o abrir una pull request.** Esto permitiría
-  detectar errores antes de integrar el código y evitaría depender de recordar
-  ejecutar las pruebas manualmente.
+detectar errores antes de integrar el código y evitaría depender de recordar
+ejecutar las pruebas manualmente.
 - **Revisar el formato y la calidad del código.** Automatizar estas revisiones
-  ayudaría a mantener un estilo consistente y detectar problemas comunes,
-  dejando más tiempo para revisar la lógica del programa.
+ayudaría a mantener un estilo consistente y detectar problemas comunes,
+dejando más tiempo para revisar la lógica del programa.
 
 Este taller es el primer paso para comprender los eventos, jobs y pasos que
 permitirían implementar esas automatizaciones. El workflow actual imprime
 información; esas pruebas y revisiones serían mejoras futuras.
-
